@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research — Rupam Mukherjee</title>
+    <meta name="description" content="Publications, thesis work, and projects by Rupam Mukherjee in medical image computing, inverse problems, and computational pathology.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Rupam_Mukherjee.png" type="image/x-icon">
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+        })();
+    </script>
+</head>
+<body>
+    <header class="topbar">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
+                <li><a href="others.html">Others</a></li>
+                <li><a href="Rupam_Mukherjee_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <img src="avatar.jpg" alt="Portrait of Rupam Mukherjee" class="profile-img">
+            <div class="sidebar-id">
+                <h1>Rupam Mukherjee</h1>
+                <span class="pronouns">(He/Him)</span>
+                <p class="affiliation">
+                    M.Tech, Medical Imaging &amp; Informatics<br>
+                    <strong>Indian Institute of Technology Kharagpur</strong>
+                </p>
+            </div>
+
+            <ul class="contact">
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Kharagpur, India</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i> rmkjee1510 [dot] 24 [at] kgpian [dot] iitkgp [dot] ac [dot] in</li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> rupam15mukherjee [at] gmail [dot] com</li>
+                <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <a href="https://scholar.google.co.in/citations?user=vGCmebAAAAAJ&hl=en" class="link" target="_blank" rel="noopener">Google Scholar</a></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/rmkjee1510" class="link" target="_blank" rel="noopener">GitHub</a></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <a href="https://www.linkedin.com/in/rmkjee1510/" class="link" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+
+            <a class="sidebar-cta" href="Rupam_Mukherjee_CV.pdf" target="_blank" rel="noopener">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i> Download CV
+            </a>
+        </aside>
+
+        <main class="main-content">
+            <!-- ===================== RESEARCH OVERVIEW ===================== -->
+            <section class="card hero reveal">
+                <span class="eyebrow">Research Overview</span>
+                <p>
+                    My work sits at the intersection of <strong>medical image computing</strong>,
+                    <strong>inverse problems</strong>, and <strong>computational pathology</strong>.
+                    I am interested in reconstruction and diagnosis pipelines that respect the physics
+                    of the acquisition device and the realities of clinical data — limited annotations,
+                    patient-level heterogeneity, and the need for calibrated, trustworthy predictions.
+                </p>
+                <div class="grid" style="margin-top:18px;">
+                    <div class="grid-item">
+                        <h3>Primary Themes</h3>
+                        Physics-informed reconstruction · Multimodal fusion · Weak supervision · Calibrated risk modelling
+                    </div>
+                    <div class="grid-item">
+                        <h3>Modalities</h3>
+                        CT / modulo sinograms · Whole-slide cytology · RGB &amp; hyperspectral imaging · Clinical biomarkers
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== PUBLICATIONS ===================== -->
+            <section class="card reveal">
+                <h2>Publications &amp; Preprints</h2>
+                <ol class="pub-list">
+                    <li class="pub-item">
+                        <div class="pub-title">RAA-MIL: A Novel Framework for Classification of Oral Cytology</div>
+                        <div class="pub-authors"><strong>Mukherjee, R.</strong>, Daniel, R., Hazra, S., Dasgupta, S., Mandal, S.</div>
+                        <div class="pub-meta"><span class="badge">Accepted</span> IEEE International Symposium on Biomedical Imaging (ISBI) 2026</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2511.12269" target="_blank" rel="noopener">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i> arXiv:2511.12269</a>
+                        </div>
+                        <div class="pub-tags">
+                            <span class="tag">Multiple instance learning</span>
+                            <span class="tag">Cytology</span>
+                            <span class="tag">Weak supervision</span>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Multimodal RGB-HSI Feature Fusion with Patient-Aware Incremental Heuristic Meta-Learning for Oral Lesion Classification</div>
+                        <div class="pub-authors"><strong>Mukherjee, R.</strong>, Daniel, R., Hazra, S., Dasgupta, S., Mandal, S.</div>
+                        <div class="pub-meta"><span class="badge badge-muted">Preprint</span> Under review</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2511.12268" target="_blank" rel="noopener">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i> arXiv:2511.12268</a>
+                        </div>
+                        <div class="pub-tags">
+                            <span class="tag">Multimodal fusion</span>
+                            <span class="tag">Hyperspectral imaging</span>
+                            <span class="tag">Meta-learning</span>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Uncertainty-Aware Multimodal Fusion for Oral Lesion Classification</div>
+                        <div class="pub-authors">Hazra, S., <strong>Mukherjee, R.</strong>, Daniel, R., Dasgupta, S., Mandal, S.</div>
+                        <div class="pub-meta"><span class="badge badge-muted">Preprint</span> Under review</div>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2511.12268" target="_blank" rel="noopener">
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i> arXiv</a>
+                        </div>
+                        <div class="pub-tags">
+                            <span class="tag">Uncertainty quantification</span>
+                            <span class="tag">Multimodal fusion</span>
+                            <span class="tag">Oral oncology</span>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- ===================== THESIS & PROJECTS ===================== -->
+            <section class="card reveal">
+                <h2>Thesis &amp; Selected Projects</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="entry-head">
+                            <span class="entry-title">M.Tech Thesis — IIT Kharagpur</span>
+                            <span class="entry-date">Jan 2025 — Apr 2026</span>
+                        </div>
+                        <div class="entry-sub">Physics-Aware Learning for Modulo Sinogram Unwrapping &amp; Reconstruction</div>
+                        <ul class="entry-points">
+                            <li>Engineered a physics-informed machine learning framework to unwrap modulo sinograms, integrating CT physics and forward-projection models directly into the learning pipeline.</li>
+                            <li>Formulated and solved the associated inverse problem by embedding physical imaging constraints into deep architectures, systematically reducing high-density artifacts and noise.</li>
+                            <li>Improved the robustness and spatial resolution of CT reconstructions relative to traditional analytical methods.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="entry-head">
+                            <span class="entry-title">Oral Cytology &amp; OPMD Analysis — MIT Lab, SMST</span>
+                            <span class="entry-date">Jan 2025 — Jul 2025</span>
+                        </div>
+                        <div class="entry-sub">Deep learning on whole-slide cytology for early lesion detection</div>
+                        <ul class="entry-points">
+                            <li>Attention-based multiple-instance learning over whole-slide images with patient-aware splits and evaluation.</li>
+                            <li>Multimodal RGB–hyperspectral fusion with uncertainty estimation for oral lesion classification.</li>
+                            <li>Developed in close collaboration with pathologists to align model outputs with clinical reporting.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="entry-head">
+                            <span class="entry-title">Capstone — Telemedicine Platform</span>
+                            <span class="entry-date">Jan 2025 — May 2025</span>
+                        </div>
+                        <div class="entry-sub">Neurology hospital management system</div>
+                        <ul class="entry-points">
+                            <li>Architected a telemedicine web platform on Apache and PHP with role-based clinical workflows.</li>
+                            <li>Integrated an AI-assisted image analysis module to support remote neurological diagnostics.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="entry-head">
+                            <span class="entry-title">B.Tech Thesis — KGEC</span>
+                            <span class="entry-date">2023 — 2024</span>
+                        </div>
+                        <div class="entry-sub">Pancreatic cancer prediction from imaging &amp; biomarkers</div>
+                        <ul class="entry-points">
+                            <li>Developed convolutional neural networks to automate pancreatic tumour detection from CT scans.</li>
+                            <li>Implemented machine learning classifiers on clinical urinary biomarkers, surpassing the previous state-of-the-art accuracy by 0.7%.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ===================== METHODS & TOOLING ===================== -->
+            <section class="card reveal">
+                <h2>Methods &amp; Tooling</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>ML / DL</h3>
+                        PyTorch · MONAI · scikit-learn · Optuna (HPO)
+                    </div>
+                    <div class="grid-item">
+                        <h3>Medical Imaging</h3>
+                        SimpleITK · NiBabel · PyRadiomics · ITK · OpenCV · Pillow
+                    </div>
+                    <div class="grid-item">
+                        <h3>Data &amp; Visualization</h3>
+                        NumPy · Pandas · Matplotlib · Seaborn · SciPy
+                    </div>
+                    <div class="grid-item">
+                        <h3>Ops</h3>
+                        Git · Docker · Linux · HPC
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            © 2026 Rupam Mukherjee ·
+            <a href="mailto:rupam15mukherjee@gmail.com">Get in touch</a>
+        </footer>
+    </div>
+
+    <script src="site.js"></script>
+</body>
+</html>

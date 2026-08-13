@@ -1,0 +1,225 @@
+%
+% Academic CV — Rupam Mukherjee
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% ---------- Packages ----------
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{ifthen}
+
+% ---------- Page setup ----------
+\geometry{left=1.8cm, top=1.6cm, right=1.8cm, bottom=1.6cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=1.6em, itemsep=0.5mm, topsep=0.5mm}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\large\bfseries\scshape}{ }{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt plus 2pt minus 2pt}{4pt plus 1pt minus 1pt}
+
+% ---------- Custom macros ----------
+\newcommand{\resumeSubheading}[4]{
+\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProject}[4]{
+\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+}
+
+\newcommand{\resumeItem}[1]{\item #1}
+\newcommand{\resumeListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeListEnd}{\end{itemize}\vspace{-1mm}}
+
+% ---------- Icon helpers ----------
+\newcommand{\iconMap}{\faMapMarker*}
+\newcommand{\iconMail}{\faEnvelope}
+\newcommand{\iconPhone}{\faPhone}
+\newcommand{\iconLinkedin}{\faLinkedin}
+\newcommand{\iconGithub}{\faGithub}
+\newcommand{\iconScholar}{\faGraduationCap}
+
+% ---------- Header ----------
+\newcommand{\Name}{Rupam Mukherjee}
+\newcommand{\Header}{
+\begin{center}
+  {\fontsize{20}{22}\bfseries \Name}\par
+  \vspace{4pt}\small
+  \iconMap\; Kharagpur, India \quad
+  \iconMail\; \href{mailto:rupam15mukherjee@gmail.com}{rupam15mukherjee@gmail.com} \quad
+  \iconPhone\; +91-7908089202 \\[3pt]
+  \iconLinkedin\; \href{https://www.linkedin.com/in/rmkjee1510/}{linkedin.com/in/rmkjee1510} \quad
+  \iconGithub\; \href{https://github.com/rmkjee1510}{github.com/rmkjee1510} \quad
+  \iconScholar\; \href{https://scholar.google.co.in/citations?user=vGCmebAAAAAJ}{Google Scholar}
+\end{center}
+\vspace{-0.5em}
+}
+
+% ---------- Document ----------
+\begin{document}
+\Header
+
+% ---------- Research Interests ----------
+\section*{Research Interests}
+Medical Image Computing; Inverse Problems; Machine Learning; Digital \& Computational Pathology.
+
+% ---------- Education ----------
+\section*{Education}
+\begin{itemize}[leftmargin=*]
+  \resumeSubheading
+    {Indian Institute of Technology Kharagpur}{Kharagpur, India}
+    {M.Tech in Medical Imaging \& Informatics; GPA: 8.82/10}{Jul 2024 -- May 2026}
+    \resumeListStart
+      \resumeItem{Coursework: Digital Image Processing, Biostatistics, Physics \& Instrumentation of Medical Imaging, Medical Image Analysis, Pathological Image Processing, Molecular Imaging, Computer Vision.}
+    \resumeListEnd
+
+  \resumeSubheading
+    {Kalyani Government Engineering College}{West Bengal, India}
+    {B.Tech in Computer Science \& Engineering; GPA: 8.88/10}{Oct 2020 -- May 2024}
+    \resumeListStart
+      \resumeItem{Coursework: Programming, Engineering Mathematics, Data Structures, Algorithms, Machine Learning, Theory of Computation, Compiler Design, Operating Systems.}
+    \resumeListEnd
+\end{itemize}
+
+% ---------- Publications ----------
+\section*{Publications \& Preprints}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Mukherjee, R.}, Daniel, R., Hazra, S., Dasgupta, S., Mandal, S.
+\textit{RAA-MIL: A Novel Framework for Classification of Oral Cytology}.   \textbf{Accepted at IEEE ISBI 2026}.
+\href{https://arxiv.org/abs/2511.12269}{[arXiv Version]} \quad
+
+\item \textbf{Mukherjee, R.}, Daniel, R., Hazra, S., Dasgupta, S., Mandal, S.
+\textit{Multimodal RGB-HSI Feature Fusion with Patient-Aware Incremental Heuristic Meta-Learning for Oral Lesion Classification}.
+\href{https://arxiv.org/abs/2511.12268}{[arXiv]} \quad
+
+\item  Hazra, S., \textbf{Mukherjee, R.}, Daniel, R., Dasgupta, S., Mandal, S.
+\textit{Uncertainty-Aware Multimodal Fusion for Oral Lesion Classification}.
+\href{https://arxiv.org/abs/2511.12268}{[arXiv]} \quad
+
+\end{itemize}
+
+% ---------- Experience ----------
+\section*{Experience}
+\begin{itemize}[leftmargin=*]
+
+  \resumeSubheading
+    {Project Associate-1}{CRTDH, IIT Kharagpur}
+    {AI/ML Development}{Jun 2026 -- Jul 2026}
+    \resumeListStart
+      \resumeItem{Developed a clinically aware Oral Cancer AI Triage System.}
+      \resumeItem{Coordinated with Software Dev teams for platform development and feature integration.}
+    \resumeListEnd
+
+  \resumeSubheading
+    {Student Lead — IEEE EMBS BHI 2025 Data Competition}{Remote}
+    {Team Coordination \& Administration}{2025}
+    \resumeListStart
+      \resumeItem{Directed team registration, administrative workflows, and official communications with global organizers.}
+      \resumeItem{Managed cross-functional coordination with Task Leaders across multiple competition tracks to ensure seamless participation and technical execution.}
+    \resumeListEnd
+
+  \resumeSubheading
+    {Research Intern — MIT Lab, SMST, IIT Kharagpur}{Kharagpur, India}
+    {Deep Learning for OPMD Classification}{Jan 2025 -- Jul 2025}
+    \resumeListStart
+      \resumeItem{Engineered deep learning architectures to analyze Oral Cytology Whole Slide Images (WSIs) for the automated classification of Oral Potentially Malignant Disorders (OPMD).}
+      \resumeItem{Collaborated closely under the supervision of Dr.\ Subhamoy Mandal and Dr.\ Shirin Dasgupta to bridge computational models with clinical pathology needs.}
+    \resumeListEnd
+
+  \resumeSubheading
+    {Teaching Assistant — SMST, IIT Kharagpur}{Kharagpur, India}
+    {Course: Pathological Image Processing}{Jan 2026 -- Apr 2026}
+    \resumeListStart
+      \resumeItem{Mentored graduate students in developing Python-driven image analysis workflows specifically tailored for pathological applications.}
+    \resumeListEnd
+
+  \resumeSubheading
+    {Teaching Assistant — SMST, IIT Kharagpur}{Kharagpur, India}
+    {Course: Introduction to Programming}{Jul 2025 -- Nov 2025}
+    \resumeListStart
+      \resumeItem{Instructed MMST students (medical professionals/MBBS doctors) in Python programming, focusing on algorithmic thinking and computational problem-solving.}
+    \resumeListEnd
+\end{itemize}
+
+% ---------- Thesis & Selected Projects ----------
+\section*{Thesis \& Selected Projects}
+\begin{itemize}[leftmargin=*]
+  \resumeProject{M.Tech Thesis — IIT Kharagpur}{Physics-Aware Learning for Modulo Sinogram Unwrapping \& Reconstruction}{Jan 2025 -- Apr 2026}{}
+    \resumeListStart
+      \resumeItem{Engineered a physics-informed machine learning framework to accurately unwrap modulo sinograms, directly integrating CT physics and forward-projection models into the learning pipeline.}
+      \resumeItem{Formulated and solved complex inverse problems by embedding physical imaging constraints into deep learning architectures, systematically reducing high-density artifacts and noise.}
+      \resumeItem{Enhanced the overall robustness and spatial resolution of CT image reconstructions, outperforming traditional analytical methods.}
+    \resumeListEnd
+
+  \resumeProject{Capstone: Telemedicine Platform}{Neurology Hospital Management System}{Jan 2025 -- May 2025}{}
+    \resumeListStart
+      \resumeItem{Architected a comprehensive telemedicine web platform utilizing Apache and PHP.}
+      \resumeItem{Integrated an AI-assisted image analysis module directly into the platform to support remote neurological diagnostics.}
+    \resumeListEnd
+
+  \resumeProject{B.Tech Thesis — KGEC}{Pancreatic Cancer Prediction from Imaging \& Biomarkers}{2023 -- 2024}{}
+    \resumeListStart
+      \resumeItem{Developed Convolutional Neural Networks (CNNs) to automate the detection of pancreatic tumors from CT scans.}
+      \resumeItem{Implemented machine learning classifiers on clinical urinary biomarkers, surpassing previous state-of-the-art predictive accuracy by 0.7\%.}
+    \resumeListEnd
+\end{itemize}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Programming:} Python, C/C++, MATLAB}
+  \resumeItem{\textbf{ML/DL:} PyTorch, MONAI, scikit-learn, Optuna}
+  \resumeItem{\textbf{Medical Imaging:} OpenCV, Pillow, SimpleITK, NiBabel, PyRadiomics, ITK}
+  \resumeItem{\textbf{Data/Visualization:} NumPy, Pandas, Matplotlib, Seaborn, SciPy}
+  \resumeItem{\textbf{MLOps/Tools:} Git, Docker, Linux, HPC}
+\end{itemize}
+
+% ---------- Achievements ----------
+\section*{Achievements}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{AIR 2741} (Top 2.5\%) among 120K+ candidates in GATE Computer Science (2024).}
+  \resumeItem{\textbf{GMR 1801} (Top 1.8\%) among 100K+ candidates in WBJEE (2020).}
+  \resumeItem{\textbf{Olympiad Rank 7} in iOS \& iOM (SilverZone, 2013).}
+  \resumeItem{\textbf{10/10 CGPA} in CBSE Secondary School Examination (2017).}
+\end{itemize}
+
+% ---------- Summer Schools ----------
+\section*{Summer Schools \& Academic Training}
+\begin{itemize}[leftmargin=*]
+  \resumeProject{JTG / IEEE IT Society Summer School}{Department of Electrical Engineering, C-MInDS, IIT Bombay}{Jul 2025}{}
+    \resumeListStart
+      \resumeItem{Completed advanced training in Deep Learning, Graph Signal Processing, and Wireless Networks.}
+      \resumeItem{Engaged with pioneering lectures and invited talks from leading researchers, including faculty from UCSD and Georgia Tech.}
+    \resumeListEnd
+
+  \resumeProject{IITB SysCon Summer School}{Department of Systems \& Control, IIT Bombay}{May 2023}{}
+    \resumeListStart
+      \resumeItem{Participated in intensive theoretical sessions covering Quantum Control, Multi-Agent Systems, Reinforcement Learning, and Vibrational Control.}
+    \resumeListEnd
+\end{itemize}
+
+\end{document}
